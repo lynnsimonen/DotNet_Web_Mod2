@@ -19,6 +19,12 @@ $(function(){
     });
  
 
+    //Close the toast when the user presses Escape:
+    $(document).on('keyup', function(e) {
+        if (e.key === "Escape") {
+            $('#toast').toast('hide');
+        }
+    });
     
 });
 
