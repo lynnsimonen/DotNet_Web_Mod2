@@ -30,6 +30,18 @@
 
         .ball {
             visibility: hidden;
+        }
+
+        #liveToast {
+            width: 1000px;
+            height: 400px;
+            position: absolute;
+            top: 0px;
+            background-color: yellow;
+            /* Center horizontally*/
+            margin: 5%;
+        }
+
     </style>
 </head>
 
@@ -73,19 +85,17 @@
                     <img src="media/red.png" class="ball" alt="red balloon" id="redImg" />
                     <img src="media/green.png" class="ball" alt="green balloon" id="greenImg" />
                     <img src="media/blue.png" class="ball" alt="blue balloon" id="blueImg" />
-
-                    /* <!-- Create a toast when the submit button is clicked only if there are no balloons selected.-->
+                    
+                    <!-- Create a toast when the submit button is clicked only if there are no balloons selected.-->
                     <!--<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>-->
-                    <div id="liveToast" class="toast" aria-live="assertive" aria-atomic="true">
-                        <div class="toast-header">
-                            <img src="media/red.png" class="ball" alt="red balloon" id="redImg" />
-                            <strong class="me-auto">BALLOON ALERT</strong>
-                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        <div id="liveToast" class="toast">
+                            <div class="toast-header" me-auto p-1 bg-primary d-inline-block">
+                                BALLOON ALERT
+                            </div>
+                            <div class="toast-body" me-auto p-1 bg-primary d-inline-block">
+                                Don't forget to choose a balloon!!!
+                            </div>
                         </div>
-                        <div class="toast-body">
-                            Don't forget to choose a balloon!!!
-                        </div>
-                    </div> */
                 </div>
             </div>
         </form>

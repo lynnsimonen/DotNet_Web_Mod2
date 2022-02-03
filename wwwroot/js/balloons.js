@@ -17,16 +17,22 @@ $(function(){
          $('#' + this.id + 'Img').addClass('animate__animated animate__bounceOutUp');
     });
 
-    // //Trigger live toast if no balloon checkboxes are checked
-    // var toastTrigger = document.getElementById('submit')
-    // var toastLiveExample = document.getElementById('liveToast')
-    // if (toastTrigger) {
-    //     toastTrigger.addEventListener('click', function () {
-    //     var toast = new bootstrap.Toast(toastLiveExample)
-
-    //     toast.show()
-    // })
-    // }
-
+    //Assign03 - 2. Trigger live toast if no balloon checkboxes are checked
+     $('#submit').on('click', function(e) {
+        var isChecked = false;
+        // determine if any check boxes are checked
+        $('.form-check-input').each(function () {
+            if ($(this).prop('checked')){
+                isChecked = true;
+            }
+        });
+        if (!isChecked) {
+            $('#liveToast').toast({ autohide: false }).toast('show');
+        }
+    });
 
 });
+
+
+
+  
