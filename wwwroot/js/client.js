@@ -10,15 +10,6 @@ $(function(){
         toast.currentTime = 0;
         // play audio
         toast.play();
-        // display product data
-        $('#product').html($(this).data('product'));
-        $('#code').html($(this).data('code'));
         $('#toast').toast({ autohide: false }).toast('show');
-    });
-
-    $(document).on('keyup', function(e) {
-        if (e.key === "Escape") {
-            $('#toast').toast('hide');
-        }
     });
 });
