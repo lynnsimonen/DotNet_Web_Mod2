@@ -39,13 +39,20 @@
         }
 
         #liveToast {
+            line-height: 300%;
             width: 1000px;
-            height: 400px;
+            height: 250px;
+            text-align: center;
+            TE
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color:blueviolet;
             position: absolute;
             top: 0px;
             background-color: yellow;
-            /* Center horizontally*/
             margin: 5%;
+            border-radius: 5;
+            vertical-align: middle;
+            z-index: 999999;
         }
 
     </style>
@@ -101,13 +108,13 @@
                     <!-- Create a toast when the submit button is clicked only if there are no balloons selected.-->
                     <!--<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>-->
                     <div id="liveToast" class="toast">
-                        <div class="toast-header" me-auto p-1 bg-primary d-inline-block">
-                            BALLOON ALERT
-                        </div>                            
                         <div class="toast-body"  p-1 bg-primary d-inline-block">
                             <strong>
-                            Don't forget to choose a balloon!!!
+                            DON'T FORGET TO CHOOSE A BALLOON! 
                             </strong>
+                            <img src="media/red.png" />
+                            <img src="media/green.png"/>
+                            <img src="media/blue.png"/>
                         </div>
                     </div>
                 </div>
